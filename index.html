@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DK SPIRIT — Boutique en ligne de mode streetwear et de matériel studio au Sénégal</title>
+	<meta name="description" content="DK SPIRIT, la marketplace de référence à Dakar : t-shirts, shorts, joggers, pulls, casques et matériel studio BuzzLab. Livraison partout au Sénégal, paiement sécurisé.">
+	<meta name="theme-color" content="#16130f">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="DK SPIRIT — Boutique en ligne">
+	<meta property="og:description" content="Mode streetwear et matériel studio BuzzLab, livrés partout au Sénégal.">
+	<meta property="og:image" content="assets/images/branding/buzzlab.jpeg">
+	<link rel="icon" type="image/png" href="assets/images/branding/dk.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="./vendor/bootstrap-5.2.2/dist/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="./vendor/bootstrap-5.2.2/dist/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="./vendor/bootstrap-icons-1.9.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<script src="./assets/js/products.js" defer></script>
+	<script src="./assets/js/main.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+
+<div class="promo">
+	<div class="container">
+		<div class="promo__inner">
+			<i class="bi bi-truck" aria-hidden="true"></i>
+			<span>Livraison offerte dès 50&nbsp;000 FCFA à Dakar — paiement à la commande</span>
+			<a href="aide.html#livraison">Conditions</a>
+		</div>
+	</div>
+</div>
+
+<header class="header">
+	<div class="container">
+		<div class="header__bar">
+			<a class="brand" href="index.html">
+				<img class="brand__mark" src="assets/images/branding/dk.png" alt="" width="30" height="30">
+				<span>DK<span class="brand__dot">.</span>SPIRIT</span>
+			</a>
+
+			<form class="search" role="search" data-dk-search>
+				<i class="bi bi-search search__icon" aria-hidden="true"></i>
+				<label class="visually-hidden" for="dkSearch">Rechercher un produit</label>
+				<input class="search__input" id="dkSearch" type="search" placeholder="Rechercher un produit…" autocomplete="off" data-dk-search-input>
+				<div class="search__results" data-dk-search-results hidden></div>
+			</form>
+
+			<nav class="nav" aria-label="Navigation principale">
+				<a class="nav__link" href="index.html" data-dk-nav="index.html">Accueil</a>
+				<a class="nav__link" href="hommes.html" data-dk-nav="hommes.html">Boutique</a>
+				<a class="nav__link" href="panier.html" data-dk-nav="panier.html">Panier</a>
+				<a class="nav__link" href="aide.html" data-dk-nav="aide.html">Aide</a>
+			</nav>
+
+			<div class="header__actions">
+				<button type="button" class="icon-btn" data-dk-open="dkCartDrawer" aria-label="Ouvrir le panier">
+					<i class="bi bi-bag" aria-hidden="true"></i>
+					<span class="icon-btn__count" data-dk-count data-count="0">0</span>
+				</button>
+
+				<div class="account">
+					<button type="button" class="account__toggle" data-dk-account-toggle aria-expanded="false" aria-haspopup="true" aria-controls="dkAccountMenu">
+						<img class="account__avatar" src="assets/images/branding/dk.png" alt="" width="26" height="26">
+						<span class="account__label">Mon compte</span>
+						<i class="bi bi-chevron-down" aria-hidden="true"></i>
+					</button>
+					<div class="account__menu" id="dkAccountMenu" data-dk-account-menu>
+						<div class="account__menu-head">
+							<p class="account__menu-name">Invité</p>
+							<p class="account__menu-mail">Connectez-vous pour commander</p>
+						</div>
+						<a class="account__item" href="se connecter.html"><i class="bi bi-box-arrow-in-right" aria-hidden="true"></i> Se connecter</a>
+						<a class="account__item" href="inscription.html"><i class="bi bi-person-plus" aria-hidden="true"></i> Créer un compte</a>
+						<a class="account__item" href="panier.html"><i class="bi bi-bag-check" aria-hidden="true"></i> Mes commandes</a>
+						<hr class="account__sep">
+						<a class="account__item account__item--danger" href="se connecter.html"><i class="bi bi-box-arrow-right" aria-hidden="true"></i> Se déconnecter</a>
+					</div>
+				</div>
+
+				<button type="button" class="icon-btn burger" data-dk-open="dkMobileNav" aria-label="Ouvrir le menu">
+					<i class="bi bi-list" aria-hidden="true"></i>
+				</button>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main id="main">
+	<!-- ================= Accroche ================= -->
+	<section class="section section--tight">
+		<div class="container">
+			<div class="hero-intro">
+				<span class="section-head__eyebrow">Dakar · Sénégal</span>
+				<h1 class="hero-intro__title">La mode streetwear et le matériel studio, réunis au même endroit</h1>
+				<p class="hero-intro__sub">DK SPIRIT réunit la collection de la maison et le matériel du label BuzzLab. Livraison à Dakar en 24 h, paiement à la commande, et des prix affichés en francs CFA sans surprise.</p>
+				<div class="hero-intro__actions">
+					<a class="btn btn--accent btn--lg" href="hommes.html">Découvrir la boutique</a>
+					<a class="btn btn--outline btn--lg" href="studio.html">Voir le rayon studio</a>
+				</div>
+			</div>
+
+			<div class="hero" data-dk-hero>
+				<div class="hero__track" data-dk-hero-track>
+					<div class="hero__slide hero__slide--text" data-dk-hero-slide>
+						<div class="hero__slide-inner">
+							<span class="hero__slide-eyebrow">Label BuzzLab</span>
+							<p class="hero__slide-title">BuzzLab is back</p>
+							<p class="hero__slide-sub">Le matériel de studio du label est de nouveau disponible : micros, consoles, claviers MIDI et enceintes de monitoring.</p>
+							<a class="btn btn--accent" href="studio.html">Découvrir le rayon studio</a>
+						</div>
+					</div>
+				</div>
+
+				<button type="button" class="hero__nav hero__nav--prev" data-dk-hero-prev aria-label="Bannière précédente">
+					<i class="bi bi-chevron-left" aria-hidden="true"></i>
+				</button>
+				<button type="button" class="hero__nav hero__nav--next" data-dk-hero-next aria-label="Bannière suivante">
+					<i class="bi bi-chevron-right" aria-hidden="true"></i>
+				</button>
+				<div class="hero__dots" data-dk-hero-dots></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ================= Catégories ================= -->
+	<section class="section section--tight">
+		<div class="container">
+			<div class="section-head">
+				<div class="section-head__text">
+					<span class="section-head__eyebrow">Nos rayons</span>
+					<h2 class="section-head__title">Que cherchez-vous ?</h2>
+					<p class="section-head__sub">De la pièce streetwear au matériel de studio, tout est au même endroit.</p>
+				</div>
+			</div>
+
+			<div class="grid grid--4">
+				<a class="card" href="casque.html">
+					<span class="card__media">
+						<img class="card__img" src="assets/images/products/casques/casque-studio-ferme.jpeg" alt="" loading="lazy" width="400" height="400">
+					</span>
+					<span class="card__body">
+						<span class="card__cat">Audio</span>
+						<span class="card__title" style="font-size:1rem">Casques</span>
+						<span class="card__sub">Isolation et monitoring pour le studio comme pour la ville.</span>
+					</span>
+				</a>
+				<a class="card" href="studio.html">
+					<span class="card__media">
+						<img class="card__img" src="assets/images/products/studio/micro-condensateur.jpeg" alt="" loading="lazy" width="400" height="400">
+					</span>
+					<span class="card__body">
+						<span class="card__cat">BuzzLab</span>
+						<span class="card__title" style="font-size:1rem">Studio &amp; Audio</span>
+						<span class="card__sub">Micros, consoles, claviers MIDI et enceintes de monitoring.</span>
+					</span>
+				</a>
+				<a class="card" href="hommes.html">
+					<span class="card__media">
+						<img class="card__img" src="assets/images/products/tshirts/t1.png" alt="" loading="lazy" width="400" height="400">
+					</span>
+					<span class="card__body">
+						<span class="card__cat">Mode</span>
+						<span class="card__title" style="font-size:1rem">T-Shirts &amp; Shorts</span>
+						<span class="card__sub">La collection permanente, du XS au XXL.</span>
+					</span>
+				</a>
+				<a class="card" href="pull_jogger.html">
+					<span class="card__media">
+						<img class="card__img" src="assets/images/products/pulls/p1.png" alt="" loading="lazy" width="400" height="400">
+					</span>
+					<span class="card__body">
+						<span class="card__cat">Mode</span>
+						<span class="card__title" style="font-size:1rem">Pulls &amp; Joggers</span>
+						<span class="card__sub">Molleton lourd et coupes confortables pour les nuits de Dakar.</span>
+					</span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- ================= Sélection ================= -->
+	<section class="section">
+		<div class="container">
+			<div class="section-head">
+				<div class="section-head__text">
+					<span class="section-head__eyebrow">Notre sélection</span>
+					<h2 class="section-head__title">Les indispensables</h2>
+					<p class="section-head__sub">Les pièces que nos clients rachètent le plus souvent.</p>
+				</div>
+				<a class="btn btn--outline" href="hommes.html">Voir toute la boutique</a>
+			</div>
+			<div class="grid" data-dk-grid="featured"></div>
+		</div>
+	</section>
+
+	<!-- ================= Promotions ================= -->
+	<section class="section section--soft">
+		<div class="container">
+			<div class="section-head">
+				<div class="section-head__text">
+					<span class="section-head__eyebrow">Soldes</span>
+					<h2 class="section-head__title">En promotion</h2>
+					<p class="section-head__sub">Les remises sont calculées à partir du prix barré, sans exception.</p>
+				</div>
+			</div>
+			<div class="grid" data-dk-grid="promo"></div>
+		</div>
+	</section>
+
+	<!-- ================= Arguments ================= -->
+	<section class="section">
+		<div class="container">
+			<div class="grid grid--4">
+				<div class="pdp__reassure">
+					<p class="pdp__reassure-item"><i class="bi bi-truck" aria-hidden="true"></i>
+						<span><strong>Livraison 24 h</strong><br>Partout à Dakar, 2 à 4 jours ouvrés pour le reste du Sénégal.</span></p>
+				</div>
+				<div class="pdp__reassure">
+					<p class="pdp__reassure-item"><i class="bi bi-cash-coin" aria-hidden="true"></i>
+						<span><strong>Paiement à la commande</strong><br>Espèces, carte ou transfert. Aucun frais caché.</span></p>
+				</div>
+				<div class="pdp__reassure">
+					<p class="pdp__reassure-item"><i class="bi bi-arrow-counterclockwise" aria-hidden="true"></i>
+						<span><strong>Retours sous 7 jours</strong><br>Gratuitement, en boutique ou à domicile.</span></p>
+				</div>
+				<div class="pdp__reassure">
+					<p class="pdp__reassure-item"><i class="bi bi-patch-check" aria-hidden="true"></i>
+						<span><strong>Produits authentiques</strong><br>Sélectionnés et garantis par la maison.</span></p>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer__top">
+			<div>
+				<a class="footer__brand" href="index.html">
+					<img class="brand__mark" src="assets/images/branding/dk.png" alt="" width="30" height="30">
+					DK SPIRIT
+				</a>
+				<p class="footer__about">La marketplace qui réunit la mode streetwear DK Spirit et le matériel studio du label BuzzLab, disponible à Dakar et partout au Sénégal.</p>
+				<ul class="social">
+					<li><a href="https://facebook.com" aria-label="DK SPIRIT sur Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="https://instagram.com" aria-label="DK SPIRIT sur Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="https://x.com" aria-label="DK SPIRIT sur X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a></li>
+					<li><a href="https://youtube.com" aria-label="DK SPIRIT sur YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a></li>
+					<li><a href="https://linkedin.com" aria-label="DK SPIRIT sur LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a></li>
+					<li><a href="https://wa.me/221779030109" aria-label="DK SPIRIT sur WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h2 class="footer__title">Boutique</h2>
+				<ul class="footer__list">
+					<li><a href="hommes.html">T-Shirts</a></li>
+					<li><a href="hommes.html">Shorts</a></li>
+					<li><a href="pull_jogger.html">Pulls &amp; Sweats</a></li>
+					<li><a href="pull_jogger.html">Joggers</a></li>
+					<li><a href="casque.html">Casques</a></li>
+					<li><a href="studio.html">Studio &amp; Audio</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h2 class="footer__title">Mon compte</h2>
+				<ul class="footer__list">
+					<li><a href="se connecter.html">Se connecter</a></li>
+					<li><a href="inscription.html">Créer un compte</a></li>
+					<li><a href="panier.html">Mon panier</a></li>
+					<li><a href="panier.html">Mes commandes</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h2 class="footer__title">Nous contacter</h2>
+				<ul class="footer__contact">
+					<li><i class="bi bi-geo-alt" aria-hidden="true"></i> Dakar, Hann — 56</li>
+					<li><i class="bi bi-telephone" aria-hidden="true"></i> <a href="tel:+221779030109">77 903 01 09</a></li>
+					<li><i class="bi bi-printer" aria-hidden="true"></i> 77 539 77 74</li>
+					<li><i class="bi bi-envelope" aria-hidden="true"></i> <a href="mailto:contact@dkspirit.sn">contact@dkspirit.sn</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer__bottom">
+			<p>&copy; <span data-dk-year>2026</span> DK SPIRIT — Tous droits réservés.</p>
+			<ul class="footer__legal">
+				<li><a href="aide.html#livraison">Livraison</a></li>
+				<li><a href="aide.html#retours">Retours</a></li>
+				<li><a href="aide.html#paiement">Paiement</a></li>
+				<li><a href="aide.html#contact">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+<!-- ================= Panneau : navigation mobile ================= -->
+<aside class="drawer" id="dkMobileNav" aria-hidden="true" aria-label="Menu principal">
+	<div class="drawer__head">
+		<h2 class="drawer__title">Menu</h2>
+		<button type="button" class="drawer__close" data-dk-close="dkMobileNav" aria-label="Fermer le menu">
+			<i class="bi bi-x-lg" aria-hidden="true"></i>
+		</button>
+	</div>
+	<div class="drawer__body">
+		<ul class="mnav__list">
+			<li><a class="mnav__link" href="index.html"><i class="bi bi-house" aria-hidden="true"></i> Accueil</a></li>
+			<li><a class="mnav__link" href="panier.html"><i class="bi bi-bag" aria-hidden="true"></i> Mon panier</a></li>
+			<li><a class="mnav__link" href="aide.html"><i class="bi bi-patch-question" aria-hidden="true"></i> Aide</a></li>
+		</ul>
+
+		<p class="mnav__sep">Catégories</p>
+		<ul class="mnav__list" data-dk-catnav-list></ul>
+
+		<p class="mnav__sep">Mon compte</p>
+		<ul class="mnav__list">
+			<li><a class="mnav__link" href="se connecter.html"><i class="bi bi-box-arrow-in-right" aria-hidden="true"></i> Se connecter</a></li>
+			<li><a class="mnav__link" href="inscription.html"><i class="bi bi-person-plus" aria-hidden="true"></i> Créer un compte</a></li>
+		</ul>
+	</div>
+</aside>
+
+<!-- ================= Panneau : panier ================= -->
+<aside class="cart-drawer" id="dkCartDrawer" data-dk-cart-drawer aria-hidden="true" aria-label="Mon panier">
+	<div class="cart-drawer__head">
+		<h2 class="cart-drawer__title">
+			Mon panier
+			<span class="cart-drawer__count" data-dk-drawer-count>0 article</span>
+		</h2>
+		<button type="button" class="drawer__close" data-dk-close="dkCartDrawer" aria-label="Fermer le panier">
+			<i class="bi bi-x-lg" aria-hidden="true"></i>
+		</button>
+	</div>
+
+	<div class="cart-drawer__body" data-dk-cart-body></div>
+
+	<div class="cart-drawer__foot">
+		<div class="cart-total">
+			<span class="cart-total__label">Total</span>
+			<span class="cart-total__value" data-dk-total>0 FCFA</span>
+		</div>
+		<p class="cart-total__note" data-dk-savings hidden></p>
+		<a class="btn btn--accent btn--block" href="panier.html">Voir le panier</a>
+	</div>
+</aside>
+</body>
+</html>
